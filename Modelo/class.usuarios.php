@@ -29,11 +29,11 @@ class Usuario
                     }
                 }else{
                     $json['status'] = false;
-                    $json['msg'] = 'No se agrego el usuario';
+                    $json['msg'] = 'Username ya existente, Cambiarlo';
                 }
             } else {
                 $json['status'] = false;
-                $json['msg'] = '<h1> Error db </h1>';
+                $json['msg'] = 'Error db ';
             }
             echo json_encode($json);
         } catch (Exception $e) {
@@ -47,7 +47,7 @@ class Usuario
             $modelo = new Conexion;
             $db = $modelo->get_conexion();
             if ($db) {
-                $stmt = $db->prepare("CALL Login_Personal (?)");
+                $stmt = $db->prepare("CALL login (?)");
                 $stmt->bindParam(1, $username, PDO::PARAM_STR | PDO::PARAM_INPUT_OUTPUT, 4000);
                 $stmt->execute();
                 $count = $stmt->rowCount();
@@ -61,15 +61,15 @@ class Usuario
                         $_SESSION['id'] = $data[0]["id"];
                     } else {
                         $json['status'] = false;
-                        $json['msg'] = '<h1 id="mensaje"> Error en ingreso de sesión, por favor revise sus credenciales </h1>';
+                        $json['msg'] = 'Error en ingreso de sesión, por favor revise sus credenciales';
                     }
                 } else {
                     $json['status'] = false;
-                    $json['msg'] = '<h1 id="mensaje"> Error en ingreso de sesión, por favor revise sus credenciales </h1>';
+                    $json['msg'] = 'Error en ingreso de sesión, por favor revise sus credenciales';
                 }
             } else {
                 $json['status'] = false;
-                $json['msg'] = '<h1 id="mensaje"> No hay conexión </h1>';
+                $json['msg'] = 'No hay conexión ';
             }
             echo json_encode($json);
         } catch (Exception $e) {

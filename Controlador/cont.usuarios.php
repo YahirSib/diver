@@ -1,8 +1,16 @@
 <?php
 require_once("../Modelo/class.usuarios.php");
-$action = $_POST['action'];
+
+if(!empty($_POST['action'])){
+    $action = $_POST['action'];
+}else{
+    $action = $_GET['cerrar'];
+}
+
 $json = array();
 $usuario = new Usuario;
+
+
 //llamados a la db
 if($action == "agregar"){
     $nombre = $_POST["nombre"];
@@ -36,19 +44,28 @@ if($action == "agregar"){
 }
 
 if($action == "login"){
-    $contra = $_POST["contra"];
-    $usuario = $_POST["usuario"];
+    $contrasena = $_POST["contrasena"];
+    $username = $_POST["username"];
 
-    $contra_check = preg_match('~(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&])([A-Za-z\d$@$!%*?&]|[^ ]){8,15}$~', $contra);
-    $usuario_check = preg_match('~^([A-Za-z\d$@$!%*?&]|[^ ]){8,15}$~', $usuario);
+    $contrasena_check = preg_match('~(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&])([A-Za-z\d$@$!%*?&]|[^ ]){8,15}$~', $contrasena);
+    $username_check = preg_match('~^([A-Za-z\d$@$!%*?&]|[^ ]){8,15}$~', $username);
 
     if($contrasena_check && $username_check){
-        $encriptada = password_hash($contrasena, PASSWORD_BCRYPT);
-        $usuario->registrarse($json, $nombre, $apellido, $encriptada, $username, $correo, $rol);
+        $usuario->login($json, $username, $contrasena);
     }else{
         $json['status'] = false;
-        $json['msg'] = ' Error al ingresar usuario ';
+        $json['msg'] = 'Error al iniciar sesion ';
         echo json_encode($json);
+    }
+}
+
+if($action == "yes"){
+    session_start();
+    if(!empty($_SESSION['id'])){
+        $_SESSION['id'] = NULL;
+        unset($_SESSION['id']);
+        session_destroy();
+        header("Location: ../login.php");
     }
 }
 

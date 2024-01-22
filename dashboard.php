@@ -11,13 +11,13 @@
     <title>Diver - Dashboard</title>
 </head>
 
-<body id="body-pd">
+<body id="body-pd" class="min-h-[80vh]">
     <?php
     $pag = "Dashboard";
     include('Recursos/menu.php');
     ?>
-    <div class="flex w-full flex-col mt-8 ">
-        
+    <div class="flex w-full h-full justify-center items-center min-h-[80vh] mt-8 ">
+        <img class="w-4/5" src="Media/logo_completo.png">
     </div>
 
 

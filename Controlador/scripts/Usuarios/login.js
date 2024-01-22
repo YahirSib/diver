@@ -1,33 +1,29 @@
 $(document).ready(function(){
     var estado = true;
 
-    $("#fmrLogin").submit(function(e){
+    $("#frmLogin").submit(function(e){
         e.preventDefault();
         estado = true;
-        if($('#txtUsuario').val() == ""){
+        if($('#username').val() == ""){
             var resultado = "";
             resultado += '<p id="mensaje">Campo usuario Vacio</p>';
-            $('#errorUsuario').html(resultado);
+            $('#errorUsername').html(resultado);
             estado = false;
         }
-        if($('#txtPassword').val() == ""){
+        if($('#contrasena').val() == ""){
             var resultado = "";
             resultado += '<p id="mensaje">Campo contraseña Vacio</p>';
-            $('#errorContra').html(resultado);
+            $('#errorContrasena').html(resultado);
             estado = false;
         }
         if(estado == true){
-            var usuario = $('#txtUsuario').val();
-            var contra = $('#txtPassword').val();
-            let action = "login";
             $.ajax({
                 url : 'Controlador/cont.usuarios.php',
                 type : 'POST',
-                data : {
-                    action : action,
-                    usuario : usuario,
-                    contra : contra
-                },
+                data: new FormData(this),
+                contentType: false,
+                processData: false,
+                async: false,
                 success: function(respuesta){
                     var resultado = "";
                     var mensaje = JSON.parse(respuesta);

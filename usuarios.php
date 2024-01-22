@@ -18,7 +18,7 @@
     ?>
     <div class="flex w-full flex-col mt-8 ">
         <div class="flex items-center justify-between mb-5">
-            <h1 class="text-5xl font-extrabold">Administración de Usuarios</h1>
+            <h1 class="text-5xl font-extrabold text-[#101954] ">Administración de Usuarios</h1>
             <a type="button" href="agregar_usuario.php" style="font-size: 20px" class="py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 bg-white rounded-lg border border-gray-200 "> <i class='bx bx-plus'></i></a>
         </div>
     </div>

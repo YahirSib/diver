@@ -17,7 +17,7 @@
     include('Recursos/menu.php');
     ?>
     <div class="flex w-full flex-col mt-8 ">
-        <h1 class="text-5xl font-extrabold mb-8">Añadir nuevo Usuario</h1>
+        <h1 class="text-5xl font-extrabold mb-8 text-[#101954]">Añadir nuevo Usuario</h1>
         <form class="" id="frmAgregar" enctype="multipart/form-data">
             <div class="md:order-1">
                 <div class="grid md:grid-cols-2 md:gap-6">
