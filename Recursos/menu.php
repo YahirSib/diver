@@ -5,7 +5,7 @@
 
         <button id="dropdownUserAvatarButton" data-dropdown-toggle="dropdownAvatar" class="flex text-sm rounded-full md:me-0 focus:ring-4 focus:ring-gray-300" type="button">
             <span class="sr-only">Open user menu</span>
-            <img class="w-8 h-8 rounded-full" src="Media/icono.png" alt="user photo">
+            <img class="w-8 h-8 rounded-full" src="Recursos/media/icono.png" alt="user photo">
         </button>
 
         <!-- Dropdown menu -->
@@ -31,7 +31,7 @@
 </header>
 <div class="l-navbar" id="nav-bar" style="font-size: 20px">
     <nav class="nav">
-        <div> <a href="dashboard.php" class="nav_logo"> <img src="Media/logo_white.png" style="height: 15px" /> <span class="nav_logo-name">DIVER </span> </a>
+        <div> <a href="dashboard.php" class="nav_logo"> <img src="Recursos/media/logo_white.png" style="height: 15px" /> <span class="nav_logo-name">DIVER </span> </a>
             <div class="nav_list">
                 <?php
                 if ($pag == "Usuarios") {

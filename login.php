@@ -28,7 +28,7 @@
         <div class="p-4 w-full max-w-sm bg-white rounded-lg border border-gray-200 shadow-md sm:p-6 md:p-8 ">
             <form class="space-y-6" id="frmLogin" enctype="multipart/form-data">
                 <a href="#" class="flex items-center mb-6 text-2xl font-semibold text-gray-900 ">
-                    <img src="Media/logo.png" alt="logo" style="display: block; margin-left: auto; margin-right: auto; width: 45%;">
+                    <img src="Recursos/media/logo.png" alt="logo" style="display: block; margin-left: auto; margin-right: auto; width: 45%;">
                 </a>
                 <div>
                     <label style="font-size: 20px" for="username" class="block mb-2 text-sm font-medium text-gray-900 ">Username:</label>

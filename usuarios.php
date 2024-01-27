@@ -28,6 +28,9 @@
                 <thead class="text-xs text-gray-700 uppercase bg-gray-50" style="font-size: 20px">
                     <tr>
                         <th scope="col" class="py-3 px-6">
+                            N°
+                        </th>
+                        <th scope="col" class="py-3 px-6">
                             Nombre
                         </th>
                         <th scope="col" class="py-3 px-6 ">
@@ -45,9 +48,15 @@
                     </tr>
                 </thead>
                 <tbody class="text-xl" id="items">
+
                 </tbody>
             </table>
         </div>
+        <nav aria-label="Page navigation example">
+            <ul id="ul_pagination" class="flex items-center justify-end -space-x-px h-8 text-sm">
+
+            </ul>
+        </nav>
     </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>

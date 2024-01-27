@@ -17,7 +17,7 @@
     include('Recursos/menu.php');
     ?>
     <div class="flex w-full h-full justify-center items-center min-h-[80vh] mt-8 ">
-        <img class="w-4/5" src="Media/logo_completo.png">
+        <img class="w-4/5" src="Recursos/media/logo_completo.png">
     </div>
 
 
