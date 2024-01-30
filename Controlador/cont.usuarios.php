@@ -90,4 +90,32 @@ if($action == "mostrar"){
     }
 }
 
+if($action == "buscar"){
+    $val = $_POST['val'];
+    if(is_string($val)){
+        $usuario->buscarUsuario($json, $val);
+    }else{
+        $json['status'] = false;
+        $json['msg'] = 'No se ingreso correctamente la busqueda ';
+        echo json_encode($json);
+    }
+}
+
+if($action == "eliminar"){
+    $id = $_POST['id'];
+    if(is_numeric($id)){
+        if($id > 0){
+            $usuario->eliminarUsuario($json, $id);
+        }else{
+            $json['status'] = false;
+            $json['msg'] = 'Numero negativo es incorrecto ';
+            echo json_encode($json);
+        }
+    }else{
+        $json['status'] = false;
+        $json['msg'] = 'No se ingreso un tipo numero ';
+        echo json_encode($json);
+    }
+}
+
 ?>

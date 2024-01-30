@@ -77,7 +77,8 @@ class Usuario
         }
     }
 
-    public function cantUsuarios($json){
+    public function cantUsuarios($json)
+    {
         try{
             $modelo = new Conexion;
             $db = $modelo->get_conexion();
@@ -102,7 +103,8 @@ class Usuario
         }
     }
 
-    function mostrarUsuarios($json, $num){
+    function mostrarUsuarios($json, $num)
+    {
         try{
             $modelo = new Conexion;
             $db = $modelo->get_conexion();
@@ -151,6 +153,60 @@ class Usuario
             }
             echo json_encode($json);
         }catch(Exception $e){
+            echo $e->getMessage();
+        }
+    }
+
+    public function buscarUsuario($json, $val)
+    {
+        try {
+            $modelo = new Conexion;
+            $db = $modelo->get_conexion();
+            if ($db) {
+                $stmt = $db->prepare("CALL buscar_usuario(?)");
+                $stmt->bindParam(1, $val, PDO::PARAM_STR | PDO::PARAM_INPUT_OUTPUT, 4000);
+                $stmt->execute();
+                $data = $stmt->fetchAll();
+                if($data){
+                    $json['status'] = true;
+                    $json['data'] = $data;
+                }else{
+                    $json['status'] = false;
+                    $json['msg'] = 'No se encontro usuarios';
+                }
+            } else {
+                $json['status'] = false;
+                $json['msg'] = 'Error db ';
+            }
+            echo json_encode($json);
+        } catch (Exception $e) {
+            echo $e->getMessage();
+        }
+    }
+
+    public function eliminarUsuario($json, $val)
+    {
+        try {
+            $modelo = new Conexion;
+            $db = $modelo->get_conexion();
+            if ($db) {
+                $stmt = $db->prepare("DELETE FROM usuarios WHERE id = ?");
+                $stmt->bindParam(1, $val, PDO::PARAM_INT);
+                $stmt->execute();
+                $count = $stmt->rowCount();
+                if($count > 0){
+                    $json['status'] = true;
+                    $json['data'] = 'Usuario eliminado con exito';
+                }else{
+                    $json['status'] = false;
+                    $json['msg'] = 'Error al eliminar usuario';
+                }
+            } else {
+                $json['status'] = false;
+                $json['msg'] = 'Error db ';
+            }
+            echo json_encode($json);
+        } catch (Exception $e) {
             echo $e->getMessage();
         }
     }
