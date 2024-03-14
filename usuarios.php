@@ -60,10 +60,7 @@
 
         </tbody>
     </table>
-    <a data-modal-target="popup-eliminar" data-modal-toggle="popup-eliminar" class="btnHidden hidden">Boton</a>
-    <?php include('Recursos/modals.php'); ?>
-
-    
+    <?php include('Recursos/modals.php'); ?>    
     <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
     <script type="application/javascript" src="Controlador/scripts/Usuarios/ver_usuarios.js"></script>
     <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
