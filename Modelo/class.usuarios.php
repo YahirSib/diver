@@ -216,10 +216,10 @@ class Usuario
             $db = $modelo->get_conexion();
             if ($db) {
                 $stmt = $db->prepare("CALL editar_usuario(?,?,?,?,?,?)");
-                $stmt->bindParam(1, $nombre, PDO::PARAM_STR | PDO::PARAM_INPUT_OUTPUT, 4000);
-                $stmt->bindParam(2, $apellido, PDO::PARAM_INT | PDO::PARAM_INPUT_OUTPUT, 4000);
-                $stmt->bindParam(3, $username, PDO::PARAM_INT | PDO::PARAM_INPUT_OUTPUT, 4000);
-                $stmt->bindParam(4, $id, PDO::PARAM_INT | PDO::PARAM_INPUT_OUTPUT, 4000);
+                $stmt->bindParam(1, $id, PDO::PARAM_STR | PDO::PARAM_INPUT_OUTPUT, 4000);
+                $stmt->bindParam(2, $nombre, PDO::PARAM_INT | PDO::PARAM_INPUT_OUTPUT, 4000);
+                $stmt->bindParam(3, $apellido, PDO::PARAM_INT | PDO::PARAM_INPUT_OUTPUT, 4000);
+                $stmt->bindParam(4, $username, PDO::PARAM_INT | PDO::PARAM_INPUT_OUTPUT, 4000);
                 $stmt->bindParam(5, $correo, PDO::PARAM_INT | PDO::PARAM_INPUT_OUTPUT, 4000);
                 $stmt->bindParam(6, $rol, PDO::PARAM_INT | PDO::PARAM_INPUT_OUTPUT, 4000);
                 $stmt->execute();

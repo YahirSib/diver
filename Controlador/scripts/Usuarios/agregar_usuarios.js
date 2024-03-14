@@ -23,9 +23,15 @@ $(document).ready(function(){
                 success: function (respuesta) {
                     var mensaje = JSON.parse(respuesta);
                     if (mensaje.status == false) {
-                        console.log('eror');
+                        $('button[data-modal-target="popup-agregarRes"]').click();
+                        $('.confirmAgregar').text('Ocurrio un error, contactar a soporte.'); 
                     } else {
-                        console.log('creado')
+                        console.log(respuesta);
+                        $('button[data-modal-target="popup-agregarRes"]').click();
+                        $('.confirmAgregar').text('Usuario agregado con exito!');
+                        setTimeout(function(e){
+                            window.location.assign("usuarios.php");
+                        }, 1500);
                     }
                 },
                 error: function (error) {
@@ -33,7 +39,8 @@ $(document).ready(function(){
                 }
             });
         }else{
-            console.log('error');
+            $('button[data-modal-target="popup-agregarRes"]').click();
+            $('.confirmAgregar').text('Datos de usuario incorrectos.'); 
         }
     e.preventDefault();  
     });
@@ -217,10 +224,4 @@ $(document).ready(function(){
         }
     });
 
-
-    $(document).on('click','#cerrar',function(){
-        $("#fondoM").remove();
-        $("#error").remove();
-        $("#success").remove();
-    });
 })

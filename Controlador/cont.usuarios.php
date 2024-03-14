@@ -29,8 +29,8 @@ if($action == "agregar"){
     $nombre_check = preg_match('~^[a-zA-zÁáÉéÍíÓóÚú\s]{3,}$~', $nombre);
     $apellido_check = preg_match('~^[a-zA-zÁáÉéÍíÓóÚú\s]{3,}$~', $apellido);
     $contrasena_check = preg_match('~(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&])([A-Za-z\d$@$!%*?&]|[^ ]){8,15}$~', $contrasena);
-    $username_check = preg_match('~^([A-Za-z\d$@$!%*?&]|[^ ]){8,15}$~', $username);
-    $correo_check = preg_match("~^[^@]+@[^@]+\.[a-zA-Z]{2,}$~", $correo);
+    $username_check = preg_match('~^[a-zA-Z]+\.[a-zA-Z]+$~', $username);
+    $correo_check = preg_match("~^[^\s@]+@[^\s@]+\.[^\s@]+$~", $correo);
 
     if($nombre_check && $apellido_check && $contrasena_check && $username_check && $correo_check && $rol_check){
         $encriptada = password_hash($contrasena, PASSWORD_BCRYPT);

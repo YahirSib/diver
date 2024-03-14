@@ -97,7 +97,7 @@
                                 <option value="Secretario">Secretario</option>
                                 <option value="Consultor">Consultor</option>
                             </select>
-                            <label for="rol" class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white dark:bg-gray-900 px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1">Rol: <span class="text-red-500">(*)</span></label>
+                            <label for="rol" class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white dark:bg-gray-900 px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1">Correo: <span class="text-red-500">(*)</span></label>
                         </div>
                     </div>
                 </div>
@@ -108,12 +108,8 @@
                 </div>
             </div>
         </form>
-
-        
-
     </div>
-
-
+    <?php include('Recursos/modals.php'); ?>
     <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
     <script src="Recursos/js/jquery.mask.js"></script>
     <script src="Controlador/scripts/Usuarios/agregar_usuarios.js"></script>
