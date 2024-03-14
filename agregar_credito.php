@@ -34,32 +34,32 @@
                     <div class="md:order-1">
                         <div class="grid md:grid-cols-2 md:gap-6">
                             <div class="mb-6">
-                                <label for="n-credito" class="block mb-2 text-sm font-medium text-xl">N° de Credito: <span style="color: red">*</span></label>
-                                <input type="number" id="n-credito" name="n-credito" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 text-xl" required>
+                                <label for="n-credito" class="block mb-2  font-medium text-xl">N° de Credito: <span style="color: red">*</span></label>
+                                <input type="number" id="n-credito" name="n-credito" class="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 text-xl" required>
                                 <div id="errorN-credito"></div>
                             </div>
                             <div class="mb-6">
-                                <label for="receptor" class="block mb-2 text-sm font-medium text-xl">Emitido A: <span style="color: red">*</span></label>
+                                <label for="receptor" class="block mb-2 font-medium text-xl">Emitido A: <span style="color: red">*</span></label>
                                 <input style="font-size: 20px" type="text" id="receptor" name="receptor" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " required>
                                 <div id="errorReceptor"></div>
                             </div>
                         </div>
                         <div class="grid md:grid-cols-2 md:gap-6">
                             <div class="mb-6">
-                                <label for="correo" class="block mb-2 text-sm font-medium text-xl">Correo electronico: <span style="color: red">*</span></label>
-                                <input type="text" id="correo" name="correo" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 text-xl" required>
+                                <label for="correo" class="block mb-2  font-medium text-xl">Correo electronico: <span style="color: red">*</span></label>
+                                <input type="text" id="correo" name="correo" class="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 text-xl" required>
                                 <div id="errorCorreo"></div>
                             </div>
                             <div class="mb-6">
-                                <label for="monto" class="block mb-2 text-sm font-medium text-xl">Monto: <span style="color: red">*</span></label>
+                                <label for="monto" class="block mb-2  font-medium text-xl">Monto: <span style="color: red">*</span></label>
                                 <input style="font-size: 20px" type="text" id="monto" name="monto" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " required>
                                 <div id="errorMonto"></div>
                             </div>
                         </div>
                         <div class="grid md:grid-cols-2 md:gap-6">
                             <div class="mb-6 ">
-                                <label for="rol" class="block mb-2 text-sm font-medium text-xl">Tipo de credito:<span style="color: red">*</span></label>
-                                <select name="rol" id="rol" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 text-xl" required>
+                                <label for="rol" class="block mb-2 font-medium text-xl">Tipo de credito:<span style="color: red">*</span></label>
+                                <select name="rol" id="rol" class="bg-gray-50 border border-gray-300 text-gray-900  rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 text-xl" required>
                                     <option value="null">--Seleccione Tipo--</option>
                                     <option value="DTE">DTE</option>
                                     <option value="Fisico">Fisico</option>
@@ -80,32 +80,32 @@
                     <div class="md:order-1">
                         <div class="grid md:grid-cols-2 md:gap-6">
                             <div class="mb-6">
-                                <label for="n-credito" class="block mb-2 text-sm font-medium text-xl">N° de Credito: <span style="color: red">*</span></label>
-                                <input type="number" id="n-credito" name="n-credito" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 text-xl" required>
+                                <label for="n-credito" class="block mb-2  font-medium text-xl">N° de Credito: <span style="color: red">*</span></label>
+                                <input type="number" id="n-credito" name="n-credito" class="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 text-xl" required>
                                 <div id="errorN-credito"></div>
                             </div>
                             <div class="mb-6">
-                                <label for="receptor" class="block mb-2 text-sm font-medium text-xl">Recibido de: <span style="color: red">*</span></label>
+                                <label for="receptor" class="block mb-2  font-medium text-xl">Recibido de: <span style="color: red">*</span></label>
                                 <input style="font-size: 20px" type="text" id="receptor" name="receptor" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " required>
                                 <div id="errorReceptor"></div>
                             </div>
                         </div>
                         <div class="grid md:grid-cols-2 md:gap-6">
                             <div class="mb-6">
-                                <label for="correo" class="block mb-2 text-sm font-medium text-xl">Correo electronico: <span style="color: red">*</span></label>
-                                <input type="text" id="correo" name="correo" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 text-xl" required>
+                                <label for="correo" class="block mb-2 font-medium text-xl">Correo electronico: <span style="color: red">*</span></label>
+                                <input type="text" id="correo" name="correo" class="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 text-xl" required>
                                 <div id="errorCorreo"></div>
                             </div>
                             <div class="mb-6">
-                                <label for="monto" class="block mb-2 text-sm font-medium text-xl">Monto: <span style="color: red">*</span></label>
+                                <label for="monto" class="block mb-2  font-medium text-xl">Monto: <span style="color: red">*</span></label>
                                 <input style="font-size: 20px" type="text" id="monto" name="monto" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " required>
                                 <div id="errorMonto"></div>
                             </div>
                         </div>
                         <div class="grid md:grid-cols-2 md:gap-6">
                             <div class="mb-6 ">
-                                <label for="rol" class="block mb-2 text-sm font-medium text-xl">Tipo de credito:<span style="color: red">*</span></label>
-                                <select name="rol" id="rol" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 text-xl" required>
+                                <label for="rol" class="block mb-2  font-medium text-xl">Tipo de credito:<span style="color: red">*</span></label>
+                                <select name="rol" id="rol" class="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 text-xl" required>
                                     <option value="null">--Seleccione Tipo--</option>
                                     <option value="DTE">DTE</option>
                                     <option value="Fisico">Fisico</option>
