@@ -74,20 +74,7 @@ if($action == "cantUsuarios"){
 }
 
 if($action == "mostrar"){
-    $num = $_POST['num'];
-    if(is_numeric($num)){
-        if($num > 0  && $num <= 100){
-            $usuario->mostrarUsuarios($json, $num);
-        }else{
-            $json['status'] = false;
-            $json['msg'] = 'Numero despropocional ';
-            echo json_encode($json);
-        }
-    }else{
-        $json['status'] = false;
-        $json['msg'] = 'No se ingreso un tipo numero ';
-        echo json_encode($json);
-    }
+    $usuario->mostrarUsuarios($json);
 }
 
 if($action == "buscar"){

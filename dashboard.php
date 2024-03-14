@@ -11,7 +11,7 @@
     <title>Diver - Dashboard</title>
 </head>
 
-<body id="body-pd" class="min-h-[80vh]">
+<body id="body-pd" class="min-h-[80vh] ">
     <?php
     $pag = "Dashboard";
     include('Recursos/menu.php');
@@ -22,7 +22,8 @@
 
 
     <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
-    <script src="Controlador/scripts/Usuarios/detalles_usuario.js"></script>
+    <script src="node_modules/flowbite/dist/flowbite.min.js"></script>
+
 </body>
 
 </html>

@@ -26,7 +26,7 @@
             <div class="w-full col-span-4">
                 <div class="w-full grid grid-cols-10 rounded-lg border border-gray-200 border-solid">
                     <label class="col-span-2 bg-gray-200 flex items-center rounded-l-lg justify-center" for="buscar"><i class='bx bx-search-alt text-xl'></i></label>
-                    <input type="search" name="txtBuscar" class="col-span-8 w-full col-span-7 border-0 rounded-r-lg" id="txtBuscar">
+                    
                 </div>
                 
             </div>

@@ -103,45 +103,16 @@ class Usuario
         }
     }
 
-    function mostrarUsuarios($json, $num)
+    function mostrarUsuarios($json)
     {
         try{
             $modelo = new Conexion;
             $db = $modelo->get_conexion();
             if($db){
-                if($num <= 10){
-                    $limit = 10;
-                    $stmt = $db->prepare("SELECT u.id, u.nombre, u.apellido, u.correo, u.rol FROM usuarios u LIMIT ?");
-                    $stmt->bindParam(1, $limit, PDO::PARAM_INT);
-                }else{
-                    if($num <= 20){
-                        $offset = 10;
-                    }else if($num <= 30){
-                        $offset = 20;
-                    }else if($num <= 40){
-                        $offset = 30;
-                    }else if($num <= 50){
-                        $offset = 40;
-                    }else if($num <= 60){
-                        $offset = 50;
-                    }else if($num <= 70){
-                        $offset = 60;
-                    }else if($num <= 80){
-                        $offset = 70;
-                    }else if($num <= 90){
-                        $offset = 80;
-                    }else if($num <= 100){
-                        $offset = 90;
-                    }
-                    $limit = 10;
-                    $stmt = $db->prepare("SELECT u.id, u.nombre, u.apellido, u.correo, u.rol FROM usuarios u LIMIT ? OFFSET ?");
-                    $stmt->bindParam(1, $limit, PDO::PARAM_INT);
-                    $stmt->bindParam(2, $offset, PDO::PARAM_INT);
-                }
+                $stmt = $db->prepare("SELECT u.id, u.nombre, u.apellido, u.correo, u.rol FROM usuarios u ");
                 $stmt->execute();
                 $data = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 if($data){
-                    $json['status'] = true;
                     $json['data'] = $data;
                 }else{
                     $json['status'] = false;
