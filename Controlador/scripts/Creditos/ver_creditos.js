@@ -160,7 +160,7 @@ $(document).ready(function(e) {
         $("body").addClass('overflow-hidden');
         $("body").append('<div modal-backdrop="" data-dinamic="yes" class="bg-gray-900/50 dark:bg-gray-900/80 fixed inset-0 z-40"></div>');
         id = $(this).attr('data-id');
-        $('#txtNumero').text(id);
+        $('.mesanjeModal').text('¿Quieres eliminar este credito fiscal?');
         $('#btnAceptar').attr('data-id', id);
     });
 
