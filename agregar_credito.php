@@ -75,7 +75,7 @@
                     </div>
                 </form>
             </div>
-            <div class="hidden p-4 rounded-lg" id="dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
+            <div class=" p-4 rounded-lg" id="dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
                 <form class="" id="frmAgregar" enctype="multipart/form-data">
                     <div class="md:order-1">
                         <div class="grid md:grid-cols-2 md:gap-6">

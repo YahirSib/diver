@@ -65,7 +65,7 @@ $(document).ready(function(e) {
         $("body").addClass('overflow-hidden');
         $("body").append('<div modal-backdrop="" data-dinamic="yes" class="bg-gray-900/50 dark:bg-gray-900/80 fixed inset-0 z-40"></div>');
         id = $(this).attr('data-id');
-        $('#txtNumero').text(id);
+        $('.mesanjeModal').text('¿Quieres eliminar el Usuario N°: ' +id+'?');
         $('#btnAceptar').attr('data-id', id);
     });
 
