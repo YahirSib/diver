@@ -30,16 +30,16 @@
         </div>
         <div id="default-styled-tab-content">
             <div class="hidden rounded-lg " id="styled-profile" role="tabpanel" aria-labelledby="profile-tab">
-                <form class="" id="frmAgregar" enctype="multipart/form-data">
+                <form class="" id="frmAgregarEmitido" enctype="multipart/form-data">
                     <div class="md:order-1">
                         <div class="grid md:grid-cols-2 md:gap-6">
                             <div class="mb-6">
                                 <div class="relative">
-                                    <input status="false" data-popover-target="popover-click" data-popover-trigger="click" data-popover-placement="bottom" type="text" id="nombre" name="nombre" class="block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-transparent rounded-lg border-1 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " />
-                                    <label for="nombre" class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white dark:bg-gray-900 px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1">Nombre: <span class="text-red-500">(*)</span></label>
-                                    <div data-popover id="popover-click" role="tooltip" class="absolute z-20 invisible inline-block w-full text-sm text-red-500 transition-opacity duration-300 bg-red-200 border border-red-400 rounded-lg shadow-sm opacity-0 ">
+                                    <input status="false" data-popover-target="popover-nCredito" data-popover-trigger="click" data-popover-placement="bottom" type="text" id="nCredito" name="nCredito" class="block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-transparent rounded-lg border-1 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " />
+                                    <label for="nCredito" class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white dark:bg-gray-900 px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1">N° de credito fiscal: <span class="text-red-500">(*)</span></label>
+                                    <div data-popover id="popover-nCredito" role="tooltip" class="absolute z-20 invisible inline-block w-full text-sm text-red-500 transition-opacity duration-300 bg-red-200 border border-red-400 rounded-lg shadow-sm opacity-0 ">
                                         <div class="px-3 py-2">
-                                            <p id="paramNombre1"> <i class='bx bx-x h-full'></i> Nombre minimo de 3 letras.</p>
+                                            <p id="paramnCredito1"> <i class='bx bx-x h-full'></i> N° de credito minimo de 3 digitos.</p>
                                         </div>
                                         <div data-popper-arrow></div>
                                     </div>
@@ -47,42 +47,11 @@
                             </div>
                             <div class="mb-6">
                                 <div class="relative">
-                                    <input status="false" data-popover-target="popover-apellido" data-popover-trigger="click" data-popover-placement="bottom" type="text" id="apellido" name="apellido" class="block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-transparent rounded-lg border-1 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " />
-                                    <label for="apellido" class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white dark:bg-gray-900 px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1">Apellido: <span class="text-red-500">(*)</span></label>
-                                    <div data-popover id="popover-apellido" role="tooltip" class="absolute z-20 invisible inline-block w-full text-sm text-red-500 transition-opacity duration-300 bg-red-200 border border-red-400 rounded-lg shadow-sm opacity-0 ">
+                                    <input status="false" data-popover-target="popover-emitidoA" data-popover-trigger="click" data-popover-placement="bottom" type="text" id="emitidoA" name="emitidoA" class="block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-transparent rounded-lg border-1 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " />
+                                    <label for="emitidoA" class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white dark:bg-gray-900 px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1">Emitido A: <span class="text-red-500">(*)</span></label>
+                                    <div data-popover id="popover-emitidoA" role="tooltip" class="absolute z-20 invisible inline-block w-full text-sm text-red-500 transition-opacity duration-300 bg-red-200 border border-red-400 rounded-lg shadow-sm opacity-0 ">
                                         <div class="px-3 py-2">
-                                            <p id="paramApellido1"> <i class='bx bx-x h-full'></i> Apellido minimo de 3 letras.</p>
-                                        </div>
-                                        <div data-popper-arrow></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="grid md:grid-cols-2 md:gap-6">
-                            <div class="mb-6">
-                                <div class="relative">
-                                    <input status="false" data-popover-target="popover-username" data-popover-trigger="click" data-popover-placement="bottom" type="text" id="username" name="username" class="block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-transparent rounded-lg border-1 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " />
-                                    <label for="username" class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white dark:bg-gray-900 px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1">Nombre de Usuario: <span class="text-red-500">(*)</span></label>
-                                    <div data-popover id="popover-username" role="tooltip" class="absolute z-20 invisible inline-block w-full text-sm text-red-500 transition-opacity duration-300 bg-red-200 border border-red-400 rounded-lg shadow-sm opacity-0 ">
-                                        <div class="px-3 py-2">
-                                            <p id="paramUsername1"> <i class='bx bx-x h-full'></i> Cumple el formato "texto.texto" .</p>
-                                        </div>
-                                        <div data-popper-arrow></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="mb-6">
-                                <div class="relative">
-                                    <input status="false" data-popover-target="popover-contrasena" data-popover-trigger="click" data-popover-placement="bottom"  type="password" id="contrasena" name="contrasena" class="block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-transparent rounded-lg border-1 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " />
-                                    <span id="lock" data-status="block" class="absolute right-0 top-0 h-full flex justify-center items-center mr-2"><i class='bx bxs-lock-alt text-lg' ></i></span>
-                                    <label for="contrasena" class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white dark:bg-gray-900 px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1">Contraseña: <span class="text-red-500">(*)</span></label>
-                                    <div data-popover id="popover-contrasena" role="tooltip" class="absolute z-20 invisible inline-block w-full text-sm text-red-500 transition-opacity duration-300 bg-red-200 border border-red-400 rounded-lg shadow-sm opacity-0 ">
-                                        <div id="alertasContra" class="px-3 py-2">
-                                            <p id="paramContra1"> <i class='bx bx-x h-full'></i> Minimo 8, Maximo 15 caracteres.</p>
-                                            <p id="paramContra2"> <i class='bx bx-x h-full'></i> Contiene 1 Mayuscula</p>
-                                            <p id="paramContra3"> <i class='bx bx-x h-full'></i> Contiene 1 Minuscula</p>
-                                            <p id="paramContra4"> <i class='bx bx-x h-full'></i> Contiene 1 Signo especial ($@!%*?&)</p>
-                                            <p id="paramContra5"> <i class='bx bx-x h-full'></i> Contiene 1 Numero</p>
+                                            <p id="paramemitidoA1"> <i class='bx bx-x h-full'></i> Persona a quien se emite minima de 3 letras.</p>
                                         </div>
                                         <div data-popper-arrow></div>
                                     </div>
@@ -92,11 +61,39 @@
                         <div class="grid md:grid-cols-2 md:gap-6">
                             <div class="mb-6">
                                 <div class="relative">
-                                    <input status="false" data-popover-target="popover-correo" data-popover-trigger="click" data-popover-placement="bottom" type="email" id="correo" name="correo" class="block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-transparent rounded-lg border-1 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " />
-                                    <label for="correo" class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white dark:bg-gray-900 px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1">Correo: <span class="text-red-500">(*)</span></label>
-                                    <div data-popover id="popover-correo" role="tooltip" class="absolute z-20 invisible inline-block w-full text-sm text-red-500 transition-opacity duration-300 bg-red-200 border border-red-400 rounded-lg shadow-sm opacity-0 ">
+                                    <input status="false" data-popover-target="popover-correo1" data-popover-trigger="click" data-popover-placement="bottom" type="email" id="correo1" name="correo1" class="block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-transparent rounded-lg border-1 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " />
+                                    <label for="correo1" class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white dark:bg-gray-900 px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1">Correo electronico: <span class="text-red-500">(*)</span></label>
+                                    <div data-popover id="popover-correo1" role="tooltip" class="absolute z-20 invisible inline-block w-full text-sm text-red-500 transition-opacity duration-300 bg-red-200 border border-red-400 rounded-lg shadow-sm opacity-0 ">
                                         <div class="px-3 py-2">
-                                            <p id="paramCorreo1"> <i class='bx bx-x h-full'></i> Cumple el formato "ejemplo@ejemplo.ejem".</p>
+                                            <p id="paramCorreo1-1"> <i class='bx bx-x h-full'></i> Cumple el formato "ejemplo@ejemplo.ejem".</p>
+                                        </div>
+                                        <div data-popper-arrow></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-6">
+                                <div class="relative">
+                                    <input status="false" data-popover-target="popover-monto" data-popover-trigger="click" data-popover-placement="bottom"  type="text" id="monto" name="monto" class="block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-transparent rounded-lg border-1 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " />
+                                    <label for="monto" class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white dark:bg-gray-900 px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1">Monto: <span class="text-red-500">(*)</span></label>
+                                    <div data-popover id="popover-monto" role="tooltip" class="absolute z-20 invisible inline-block w-full text-sm text-red-500 transition-opacity duration-300 bg-red-200 border border-red-400 rounded-lg shadow-sm opacity-0 ">
+                                        <div id="alertasMonto" class="px-3 py-2">
+                                            <p id="paramMonto1"> <i class='bx bx-x h-full'></i> Cumple el formato 000.00</p>
+                                            <p id="paramMonto2"> <i class='bx bx-x h-full'></i> El monto es mayor que 0</p>
+                                            <p id="paramMonto3"> <i class='bx bx-x h-full'></i> No contiene ningun caracter difetente a numerico.</p>
+                                        </div>
+                                        <div data-popper-arrow></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid md:grid-cols-2 md:gap-6">
+                            <div class="mb-6">
+                                <div class="relative">
+                                    <input status="false" data-popover-target="popover-fecha2" data-popover-trigger="click" data-popover-placement="bottom" type="date" id="fecha2" name="fecha2" class="block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-transparent rounded-lg border-1 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " />
+                                    <label for="fecha2" class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white dark:bg-gray-900 px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1">Fecha: <span class="text-red-500">(*)</span></label>
+                                    <div data-popover id="popover-fecha2" role="tooltip" class="absolute z-20 invisible inline-block w-full text-sm text-red-500 transition-opacity duration-300 bg-red-200 border border-red-400 rounded-lg shadow-sm opacity-0 ">
+                                        <div class="px-3 py-2">
+                                            <p id="paramfecha2-1"> <i class='bx bx-x h-full'></i> Cumple el formato "dd/mm/aaaa" .</p>
                                         </div>
                                         <div data-popper-arrow></div>
                                     </div>
@@ -104,34 +101,47 @@
                             </div>
                             <div class="mb-6 ">
                                 <div class="relative">
-                                    <select name="rol" id="rol" class="block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-transparent rounded-lg border-1 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" ">
-                                        <option value="Administrador">Administrador</option>
-                                        <option value="Secretario">Secretario</option>
-                                        <option value="Consultor">Consultor</option>
+                                    <select name="tipo2" id="tipo2" class="block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-transparent rounded-lg border-1 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" ">
+                                        <option value="Fisico">Fisico</option>
+                                        <option value="DTE">DTE</option>
                                     </select>
-                                    <label for="rol" class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white dark:bg-gray-900 px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1">Correo: <span class="text-red-500">(*)</span></label>
+                                    <label for="tipo2" class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white dark:bg-gray-900 px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1">Tipo: <span class="text-red-500">(*)</span></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid">
+                            <div class="mb-6">
+                                <div class="relative">
+                                    <textarea status="false" data-popover-target="popover-descipcion2" data-popover-trigger="click" data-popover-placement="bottom" type="text" id="descipcion2" name="descipcion2" class="block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-transparent rounded-lg border-1 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" "></textarea>
+                                    <label for="descipcion2" class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white dark:bg-gray-900 px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1">Descripción: <span class="text-red-500">(*)</span></label>
+                                    <div data-popover id="popover-descipcion2" role="tooltip" class="absolute z-20 invisible inline-block w-full text-sm text-red-500 transition-opacity duration-300 bg-red-200 border border-red-400 rounded-lg shadow-sm opacity-0 ">
+                                        <div class="px-3 py-2">
+                                            <p id="paramdescipcion2-1"> <i class='bx bx-x h-full'></i> No excede los 1000 caractes.</p>
+                                        </div>
+                                        <div data-popper-arrow></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="w-full flex justify-between items-center">
                             <input type="hidden" value="agregar" id="action" name="action">
-                            <a href="usuarios.php" class="text-gray-900 text-xl bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg px-5 py-2.5 mr-2  "><i class='bx bxs-chevron-left'></i></a>
-                            <button type="submit" class="focus:outline-none text-xl text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg px-5 py-2.5 mr-2 "><i class='bx bxs-user-plus'></i></button>
+                            <a href="creditos.php" class="text-gray-900 text-xl bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg px-5 py-2.5 mr-2  "><i class='bx bxs-chevron-left'></i></a>
+                            <button type="submit" class="focus:outline-none text-xl text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg px-5 py-2.5 mr-2 "><i class='bx bxs-file-plus'></i></button>
                         </div>
                     </div>
                 </form>
             </div>
             <div class="hidden rounded-lg" id="styled-dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
-                <form class="" id="frmAgregar" enctype="multipart/form-data">
+                <form class="" id="frmRecibido" enctype="multipart/form-data">
                     <div class="md:order-1">
                         <div class="grid md:grid-cols-2 md:gap-6">
                             <div class="mb-6">
                                 <div class="relative">
-                                    <input status="false" data-popover-target="popover-click" data-popover-trigger="click" data-popover-placement="bottom" type="text" id="nombre" name="nombre" class="block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-transparent rounded-lg border-1 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " />
-                                    <label for="nombre" class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white dark:bg-gray-900 px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1">N° de Credito fiscal: <span class="text-red-500">(*)</span></label>
-                                    <div data-popover id="popover-click" role="tooltip" class="absolute z-20 invisible inline-block w-full text-sm text-red-500 transition-opacity duration-300 bg-red-200 border border-red-400 rounded-lg shadow-sm opacity-0 ">
+                                    <input status="false" data-popover-target="popover-nCredito2" data-popover-trigger="click" data-popover-placement="bottom" type="text" id="nCredito2" name="nCredito2" class="block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-transparent rounded-lg border-1 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " />
+                                    <label for="nCredito2" class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white dark:bg-gray-900 px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1">N° de credito fiscal: <span class="text-red-500">(*)</span></label>
+                                    <div data-popover id="popover-nCredito2" role="tooltip" class="absolute z-20 invisible inline-block w-full text-sm text-red-500 transition-opacity duration-300 bg-red-200 border border-red-400 rounded-lg shadow-sm opacity-0 ">
                                         <div class="px-3 py-2">
-                                            <p id="paramNombre1"> <i class='bx bx-x h-full'></i> Nombre minimo de 3 letras.</p>
+                                            <p id="paramnnCredito2-1"> <i class='bx bx-x h-full'></i> N° de credito minimo de 3 digitos.</p>
                                         </div>
                                         <div data-popper-arrow></div>
                                     </div>
@@ -139,40 +149,11 @@
                             </div>
                             <div class="mb-6">
                                 <div class="relative">
-                                    <select name="rol" id="rol" class="block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-transparent rounded-lg border-1 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" ">
-                                        <option value="Administrador">Administrador</option>
-                                        <option value="Secretario">Secretario</option>
-                                        <option value="Consultor">Consultor</option>
-                                    </select>
-                                    <label for="rol" class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white dark:bg-gray-900 px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1">Correo: <span class="text-red-500">(*)</span></label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="grid md:grid-cols-2 md:gap-6">
-                            <div class="mb-6">
-                                <div class="relative">
-                                    <input status="false" data-popover-target="popover-username" data-popover-trigger="click" data-popover-placement="bottom" type="text" id="username" name="username" class="block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-transparent rounded-lg border-1 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " />
-                                    <label for="username" class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white dark:bg-gray-900 px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1">Nombre de Usuario: <span class="text-red-500">(*)</span></label>
-                                    <div data-popover id="popover-username" role="tooltip" class="absolute z-20 invisible inline-block w-full text-sm text-red-500 transition-opacity duration-300 bg-red-200 border border-red-400 rounded-lg shadow-sm opacity-0 ">
+                                    <input status="false" data-popover-target="popover-recibidoDe" data-popover-trigger="click" data-popover-placement="bottom" type="text" id="recibidoDe" name="recibidoDe" class="block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-transparent rounded-lg border-1 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " />
+                                    <label for="recibidoDe" class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white dark:bg-gray-900 px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1">Recibido de: <span class="text-red-500">(*)</span></label>
+                                    <div data-popover id="popover-recibidoDe" role="tooltip" class="absolute z-20 invisible inline-block w-full text-sm text-red-500 transition-opacity duration-300 bg-red-200 border border-red-400 rounded-lg shadow-sm opacity-0 ">
                                         <div class="px-3 py-2">
-                                            <p id="paramUsername1"> <i class='bx bx-x h-full'></i> Cumple el formato "texto.texto" .</p>
-                                        </div>
-                                        <div data-popper-arrow></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="mb-6">
-                                <div class="relative">
-                                    <input status="false" data-popover-target="popover-contrasena" data-popover-trigger="click" data-popover-placement="bottom"  type="password" id="contrasena" name="contrasena" class="block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-transparent rounded-lg border-1 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " />
-                                    <span id="lock" data-status="block" class="absolute right-0 top-0 h-full flex justify-center items-center mr-2"><i class='bx bxs-lock-alt text-lg' ></i></span>
-                                    <label for="contrasena" class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white dark:bg-gray-900 px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1">Contraseña: <span class="text-red-500">(*)</span></label>
-                                    <div data-popover id="popover-contrasena" role="tooltip" class="absolute z-20 invisible inline-block w-full text-sm text-red-500 transition-opacity duration-300 bg-red-200 border border-red-400 rounded-lg shadow-sm opacity-0 ">
-                                        <div id="alertasContra" class="px-3 py-2">
-                                            <p id="paramContra1"> <i class='bx bx-x h-full'></i> Minimo 8, Maximo 15 caracteres.</p>
-                                            <p id="paramContra2"> <i class='bx bx-x h-full'></i> Contiene 1 Mayuscula</p>
-                                            <p id="paramContra3"> <i class='bx bx-x h-full'></i> Contiene 1 Minuscula</p>
-                                            <p id="paramContra4"> <i class='bx bx-x h-full'></i> Contiene 1 Signo especial ($@!%*?&)</p>
-                                            <p id="paramContra5"> <i class='bx bx-x h-full'></i> Contiene 1 Numero</p>
+                                            <p id="paramrecibidoDe1"> <i class='bx bx-x h-full'></i> Persona de quien recibe el credito, minima de 3 letras.</p>
                                         </div>
                                         <div data-popper-arrow></div>
                                     </div>
@@ -182,11 +163,39 @@
                         <div class="grid md:grid-cols-2 md:gap-6">
                             <div class="mb-6">
                                 <div class="relative">
-                                    <input status="false" data-popover-target="popover-correo" data-popover-trigger="click" data-popover-placement="bottom" type="email" id="correo" name="correo" class="block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-transparent rounded-lg border-1 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " />
-                                    <label for="correo" class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white dark:bg-gray-900 px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1">Correo: <span class="text-red-500">(*)</span></label>
-                                    <div data-popover id="popover-correo" role="tooltip" class="absolute z-20 invisible inline-block w-full text-sm text-red-500 transition-opacity duration-300 bg-red-200 border border-red-400 rounded-lg shadow-sm opacity-0 ">
+                                    <input status="false" data-popover-target="popover-correo2" data-popover-trigger="click" data-popover-placement="bottom" type="email" id="correo2" name="correo2" class="block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-transparent rounded-lg border-1 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " />
+                                    <label for="correo2" class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white dark:bg-gray-900 px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1">Correo electronico: <span class="text-red-500">(*)</span></label>
+                                    <div data-popover id="popover-correo2" role="tooltip" class="absolute z-20 invisible inline-block w-full text-sm text-red-500 transition-opacity duration-300 bg-red-200 border border-red-400 rounded-lg shadow-sm opacity-0 ">
                                         <div class="px-3 py-2">
-                                            <p id="paramCorreo1"> <i class='bx bx-x h-full'></i> Cumple el formato "ejemplo@ejemplo.ejem".</p>
+                                            <p id="paramCorreo2-1"> <i class='bx bx-x h-full'></i> Cumple el formato "ejemplo@ejemplo.ejem".</p>
+                                        </div>
+                                        <div data-popper-arrow></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-6">
+                                <div class="relative">
+                                    <input status="false" data-popover-target="popover-monto2" data-popover-trigger="click" data-popover-placement="bottom"  type="text" id="monto2" name="monto2" class="block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-transparent rounded-lg border-1 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " />
+                                    <label for="monto2" class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white dark:bg-gray-900 px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1">Monto: <span class="text-red-500">(*)</span></label>
+                                    <div data-popover id="popover-monto2" role="tooltip" class="absolute z-20 invisible inline-block w-full text-sm text-red-500 transition-opacity duration-300 bg-red-200 border border-red-400 rounded-lg shadow-sm opacity-0 ">
+                                        <div id="alertasMonto2" class="px-3 py-2">
+                                            <p id="paramMonto1"> <i class='bx bx-x h-full'></i> Cumple el formato 000.00</p>
+                                            <p id="paramMonto2"> <i class='bx bx-x h-full'></i> El monto es mayor que 0</p>
+                                            <p id="paramMonto3"> <i class='bx bx-x h-full'></i> No contiene ningun caracter difetente a numerico.</p>
+                                        </div>
+                                        <div data-popper-arrow></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid md:grid-cols-2 md:gap-6">
+                            <div class="mb-6">
+                                <div class="relative">
+                                    <input status="false" data-popover-target="popover-fecha" data-popover-trigger="click" data-popover-placement="bottom" type="date" id="fecha" name="fecha" class="block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-transparent rounded-lg border-1 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " />
+                                    <label for="fecha" class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white dark:bg-gray-900 px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1">Fecha: <span class="text-red-500">(*)</span></label>
+                                    <div data-popover id="popover-fecha" role="tooltip" class="absolute z-20 invisible inline-block w-full text-sm text-red-500 transition-opacity duration-300 bg-red-200 border border-red-400 rounded-lg shadow-sm opacity-0 ">
+                                        <div class="px-3 py-2">
+                                            <p id="paramfecha1"> <i class='bx bx-x h-full'></i> Cumple el formato "dd/mm/aaaa" .</p>
                                         </div>
                                         <div data-popper-arrow></div>
                                     </div>
@@ -194,19 +203,32 @@
                             </div>
                             <div class="mb-6 ">
                                 <div class="relative">
-                                    <select name="rol" id="rol" class="block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-transparent rounded-lg border-1 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" ">
-                                        <option value="Administrador">Administrador</option>
-                                        <option value="Secretario">Secretario</option>
-                                        <option value="Consultor">Consultor</option>
+                                    <select name="tipo" id="tipo" class="block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-transparent rounded-lg border-1 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" ">
+                                        <option value="Fisico">Fisico</option>
+                                        <option value="DTE">DTE</option>
                                     </select>
-                                    <label for="rol" class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white dark:bg-gray-900 px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1">Correo: <span class="text-red-500">(*)</span></label>
+                                    <label for="tipo" class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white dark:bg-gray-900 px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1">Tipo: <span class="text-red-500">(*)</span></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid">
+                            <div class="mb-6">
+                                <div class="relative">
+                                    <textarea status="false" data-popover-target="popover-descipcion" data-popover-trigger="click" data-popover-placement="bottom" type="text" id="descipcion" name="descipcion" class="block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-transparent rounded-lg border-1 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" "></textarea>
+                                    <label for="descipcion" class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white dark:bg-gray-900 px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1">Descripción: <span class="text-red-500">(*)</span></label>
+                                    <div data-popover id="popover-descipcion" role="tooltip" class="absolute z-20 invisible inline-block w-full text-sm text-red-500 transition-opacity duration-300 bg-red-200 border border-red-400 rounded-lg shadow-sm opacity-0 ">
+                                        <div class="px-3 py-2">
+                                            <p id="paramdescipcion1"> <i class='bx bx-x h-full'></i> No excede los 1000 caractes.</p>
+                                        </div>
+                                        <div data-popper-arrow></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="w-full flex justify-between items-center">
                             <input type="hidden" value="agregar" id="action" name="action">
-                            <a href="usuarios.php" class="text-gray-900 text-xl bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg px-5 py-2.5 mr-2  "><i class='bx bxs-chevron-left'></i></a>
-                            <button type="submit" class="focus:outline-none text-xl text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg px-5 py-2.5 mr-2 "><i class='bx bxs-user-plus'></i></button>
+                            <a href="creditos.php" class="text-gray-900 text-xl bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg px-5 py-2.5 mr-2  "><i class='bx bxs-chevron-left'></i></a>
+                            <button type="submit" class="focus:outline-none text-xl text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg px-5 py-2.5 mr-2 "><i class='bx bxs-file-plus'></i></button>
                         </div>
                     </div>
                 </form>
@@ -216,7 +238,7 @@
     <?php include('Recursos/modals.php'); ?>
     <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
     <script src="Recursos/js/jquery.mask.js"></script>
-    <script src="Controlador/scripts/Usuarios/agregar_credito.js"></script>
+    <script src="Controlador/scripts/Creditos/agregar_creditos.js"></script>
     <script src="node_modules/flowbite/dist/flowbite.min.js"></script>
 </body>
 
