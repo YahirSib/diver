@@ -10,7 +10,7 @@
     ?>
      <!--Regular Datatables CSS-->
      <link href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="Recursos/css/DataTable.css">
+     <link rel="stylesheet" href="Recursos/css/DataTable.css">
     <title>Diver - Administracion de Usuarios</title>
 </head>
 
